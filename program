@@ -1,0 +1,61 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cmath>
+using namespace std;
+
+
+
+
+
+int main() {
+
+ int empId; 
+int hours; 
+double payRate; 
+double grosspay;
+
+
+
+cout<<"Enter The Employee ID:"<<endl;
+cin>>empId;
+
+	cout << "Please enter the hours worked by employee " <<empId<< ": ";
+	cin >> hours;
+	
+	cout << "Please enter the pay rate for employee " << ": ";
+	cin >> payRate;
+	
+if (hours <40){
+
+cout << "This is the gross pay for the employee with no overtime:";
+cout << fixed << showpoint << setprecision(2);
+
+	double grossPay = hours * payRate ;
+	
+	cout << ":  $" << grossPay << endl << endl;
+		
+}
+
+	else if (hours>40){
+
+cout << "This is the gross pay with overtime for employee"<<empId<<":"<<endl;
+cout << fixed << showpoint << setprecision(2);
+
+	double grossPay = hours * payRate * 1.5 ;
+
+	cout  <<"$"<<grossPay << endl << endl;
+	if (grosspay>1500){
+	    cout <<"Your pay after taxes is"<<endl;
+	    cout << grosspay * 1.5<<endl;
+	    
+	    
+	    }
+	
+		
+	}
+	
+
+return 0;
+
+}
