@@ -13,7 +13,7 @@ int main() {
  int empId; 
 int hours; 
 double payRate; 
-double grosspay;
+
 
 
 
@@ -33,7 +33,12 @@ cout << fixed << showpoint << setprecision(2);
 
 	double grossPay = hours * payRate ;
 	
-	cout << ":  $" << grossPay << endl << endl;
+	
+
+	
+	cout << ":  $" << grossPay<< endl << endl;
+	cout <<"Your pay after tax is"<<endl;
+	cout << grossPay /1.5 << endl;
 		
 }
 
@@ -45,15 +50,11 @@ cout << fixed << showpoint << setprecision(2);
 	double grossPay = hours * payRate * 1.5 ;
 
 	cout  <<"$"<<grossPay << endl << endl;
-	if (grosspay>1500){
-	    cout <<"Your pay after taxes is"<<endl;
-	    cout << grosspay * 1.5<<endl;
-	    
-	    
-	    }
-	
-		
-	}
+		cout <<"Your pay after tax is"<<endl;
+	cout << grossPay / 2.0 << endl;
+
+}
+
 	
 
 return 0;
